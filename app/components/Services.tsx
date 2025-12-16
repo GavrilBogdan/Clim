@@ -2,18 +2,21 @@
 
 import { Wrench, Snowflake, ShieldCheck } from "lucide-react";
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import TrustBadges from "./TrustBadges";
 
 const Services = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement | null>(null);
 
   const { scrollY } = useScroll();
-
   const titleY = useTransform(scrollY, [0, 800], [0, -40]);
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 40, filter: "blur(6px)" },
+  const cardVariants: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 40,
+      filter: "blur(6px)",
+    },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
@@ -21,7 +24,7 @@ const Services = () => {
       transition: {
         delay: i * 0.2,
         duration: 0.6,
-        ease: "easeOut",
+        ease: [0.16, 1, 0.3, 1],
       },
     }),
   };
@@ -89,8 +92,9 @@ const Services = () => {
         </div>
       </div>
 
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -left-10 bottom-10"></span>
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -right-10 top-10"></span>
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -left-10 bottom-10" />
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -right-10 top-10" />
+
       <TrustBadges />
     </section>
   );
