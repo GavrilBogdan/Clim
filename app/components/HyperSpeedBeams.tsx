@@ -10,7 +10,7 @@ const HyperSpeedBeams = () => {
     if (!canvas) return;
 
     // CHANGE 1: Removed { alpha: false } so transparency works
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d")!;
     if (!ctx) return;
 
     let animationFrameId: number;
