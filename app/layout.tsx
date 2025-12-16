@@ -42,12 +42,18 @@ export default function RootLayout({
         className={` antialiased w-full min-h-screen bg-gradient-to-tr from-[#F8FBFF] via-[#D9F4FF] to-[#1A73E8]`}
       >
         {children}
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
-          alt=""
+        <a
+          href="https://wa.me/40700000000"
           target="_blank"
-          className="fixed right-1 sm:right-5 bottom-2 sm:bottom-5 w-10 sm:w-14 cursor-pointer"
-        />
+          rel="noopener noreferrer"
+          className="fixed right-1 sm:right-5 bottom-2 sm:bottom-5 z-50"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
+            alt="WhatsApp"
+            className="w-10 sm:w-14 cursor-pointer"
+          />
+        </a>
         <Footer />
       </body>
     </html>
