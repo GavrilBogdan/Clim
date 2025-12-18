@@ -62,7 +62,7 @@ const ServicesPage = () => {
 
         <FadeIn delay={150}>
           <p className="text-center font-mont text-lg sm:text-xl text-blue-900/80 max-w-3xl mx-auto leading-relaxed">
-            La <span className="font-semibold text-blue-700">ClimInstall</span>,
+            La <span className="font-semibold text-blue-700">GreenClim</span>,
             oferim servicii premium de instalare aer condiționat, cu montaj
             rapid, consultanță gratuită și garanție extinsă. Calitatea și
             profesionalismul sunt prioritățile noastre.

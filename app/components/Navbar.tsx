@@ -25,7 +25,7 @@ const Navbar = () => {
         <nav className="w-full px-10 py-4 flex justify-between items-center">
           {/* LOGO */}
           <Link href="/" className="font-bold text-2xl text-blue-700">
-            ClimInstall
+            GreenClim
           </Link>
 
           {/* MENU ITEMS */}
@@ -66,7 +66,7 @@ const Navbar = () => {
         "
       >
         <Link href="/" className="font-bold text-xl text-blue-700">
-          ClimInstall
+          GreenClim
         </Link>
 
         <button onClick={() => setOpen(true)} className="text-blue-700">
@@ -107,7 +107,7 @@ const Navbar = () => {
         <MobileNavItem href="/contact">Contact</MobileNavItem>
 
         <Link
-          href="/oferta"
+          href="/form"
           className="
             mt-4 px-3 py-3 rounded-full bg-gradient-to-r
             from-blue-700 via-blue-500 to-blue-400

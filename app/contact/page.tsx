@@ -33,14 +33,14 @@ const page = () => {
                 <div className="mt-4 font-light font-mont text-lg flex flex-col gap-2">
                   <p className="flex flex-row gap-3 items-center">
                     <Mail />
-                    email@climinstall.ro
+                    greenclim15@yahoo.com
                   </p>
                   <a
                     className="flex flex-row gap-3 items-center"
-                    href="tel:0758169591"
+                    href="tel:0735699820"
                   >
                     <Phone className="text-md " />
-                    07xx xxx xxx
+                    0735 699 820
                   </a>
                   <Link
                     href="/form"
@@ -93,7 +93,7 @@ const page = () => {
             </div>
             <div className="w-full flex justify-center">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713476.346686079!2d20.74723986228428!3d45.69063126027618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677dcb0fb5a7%3A0xd16555de1a3a3a2c!2zSnVkZcibdWwgVGltaciZ!5e0!3m2!1sro!2sro!4v1765436045528!5m2!1sro!2sro"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1441460.9274367532!2d20.585933879626406!3d45.119174493484955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474fb894d74d5291%3A0x5186d4661de76a50!2sRegiunea%20Regiunea%20Vest!5e0!3m2!1sro!2sro!4v1766039031643!5m2!1sro!2sro"
                 width="300"
                 height="300"
                 style={{ border: 0 }}

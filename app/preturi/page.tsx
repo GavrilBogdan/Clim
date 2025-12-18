@@ -79,52 +79,58 @@ const PricingPage = () => {
           <FadeIn delay={100}>
             <PriceCard
               icon={<Snowflake size={32} className="text-blue-500" />}
-              title="Basic"
-              price="399 lei"
-              description="Perfect pentru camere mici și bugete optimizate."
+              title="9000–12000 BTU"
+              price="de la 650 lei"
+              description="650 lei cu kit / 700 lei fără kit"
               features={[
                 "Montaj AC 9000–12000 BTU",
-                "1 străpungere (gaură) inclusă",
-                "Traseu frigorific standard 3m",
-                "Garanție montaj 12 luni",
+                "Cu kit: 650 lei",
+                "Fără kit: 700 lei",
+                "Traseu frigorific extra: 100 lei / m",
+                "Cablu alimentare: 18 lei / m",
+                "Furtun condens: 12 lei / m",
+                "Demontare AC: +200 lei",
               ]}
-              onSelect={() => handleOpenModal("Pachet Basic", "399 lei")}
+              onSelect={() => handleOpenModal("9000-12000", "650")}
             />
           </FadeIn>
 
           <FadeIn delay={200}>
             <PriceCard
               icon={<Zap size={32} className="text-white" />}
-              title="Standard"
-              price="499 lei"
-              description="Cel mai popular. Balanța ideală între preț și beneficii."
+              title="18000 BTU"
+              price="de la 850 lei"
+              description="850 lei cu kit / 900 lei fără kit"
               recommended
               features={[
-                "Montaj AC 9000–18000 BTU",
-                "1–2 străpungeri incluse",
-                "Testare vacuum + presiune",
-                "Traseu frigorific 3–5m",
-                "Garanție montaj 24 luni",
+                "Montaj AC 18000 BTU",
+                "Cu kit: 850 lei",
+                "Fără kit: 900 lei",
+                "Traseu frigorific extra: 100 lei / m",
+                "Cablu alimentare: 18 lei / m",
+                "Furtun condens: 12 lei / m",
+                "Demontare AC: +200 lei",
               ]}
-              onSelect={() => handleOpenModal("Pachet Standard", "499 lei")}
+              onSelect={() => handleOpenModal("18000", "850")}
             />
           </FadeIn>
 
           <FadeIn delay={300}>
             <PriceCard
               icon={<Crown size={32} className="text-purple-500" />}
-              title="Premium"
-              price="699 lei"
-              description="Pentru cei care nu fac compromisuri la calitate."
+              title="24000 BTU"
+              price="de la 950 lei"
+              description="950 lei cu kit / 1000 lei fără kit"
               features={[
-                "Montaj AC 9000–24000 BTU",
-                "Străpungeri nelimitate",
-                "Izolație matisată premium",
-                "Traseu 5m + suport unitate",
-                "Igienizare completă la final",
-                "Garanție montaj 36 luni",
+                "Montaj AC 24000 BTU",
+                "Cu kit: 950 lei",
+                "Fără kit: 1000 lei",
+                "Traseu frigorific extra: 100 lei / m",
+                "Cablu alimentare: 18 lei / m",
+                "Furtun condens: 12 lei / m",
+                "Demontare AC: +200 lei",
               ]}
-              onSelect={() => handleOpenModal("Pachet Premium", "699 lei")}
+              onSelect={() => handleOpenModal("24000", "950")}
             />
           </FadeIn>
         </div>
