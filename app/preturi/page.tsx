@@ -140,7 +140,8 @@ const PricingPage = () => {
             <p className="text-blue-900/60 font-mont text-sm max-w-xl mx-auto border-t border-blue-200 pt-8">
               * Prețurile afișate sunt pentru manoperă și materialele standard.
               Pentru instalații complexe sau unități industriale, vă rugăm să
-              cereți o ofertă dedicată.
+              cereți o ofertă dedicată. <br></br>* Prin trimiterea cererii ești
+              de acord cu prelucrarea datelor.
             </p>
 
             <button

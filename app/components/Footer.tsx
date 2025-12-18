@@ -103,10 +103,22 @@ export default function Footer() {
       </div>
 
       <div className="w-full border-t border-blue-400/30 mt-16 pt-8 flex flex-col items-center gap-6">
-        <p className="text-sm text-blue-200/60 text-center">
-          © {new Date().getFullYear()} GreenClim. Toate drepturile rezervate.
-        </p>
-
+        <div className="text-center">
+          <p className="text-sm text-blue-200/60 text-center">
+            © {new Date().getFullYear()} GreenClim. Toate drepturile rezervate.
+          </p>
+          <p className="text-md text-blue-200/90 text-center">
+            Designed by{" "}
+            <strong>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/gavril__bogdan/"
+              >
+                GBM
+              </a>
+            </strong>
+          </p>
+        </div>
         <div className="flex flex-col sm:flex-row gap-6 items-center">
           <a
             href="https://anpc.ro/ce-este-sal/"

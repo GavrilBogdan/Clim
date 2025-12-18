@@ -24,7 +24,7 @@ export default function GDPR() {
         <div className="space-y-8 font-mont leading-relaxed text-lg">
           <p>
             Protecția datelor dumneavoastră cu caracter personal este o
-            prioritate pentru <strong>ClimInstall</strong>. Această politică
+            prioritate pentru <strong>GreenClim</strong>. Această politică
             explică ce date colectăm, de ce le colectăm și cum sunt utilizate.
           </p>
 
@@ -89,7 +89,7 @@ export default function GDPR() {
               Pentru orice solicitare legată de datele personale, ne puteți
               contacta la:
             </p>
-            <p className="mt-2 font-semibold">Email: contact@climinstall.ro</p>
+            <p className="mt-2 font-semibold">Email: greenclim15@yahoo.com</p>
           </section>
 
           <p className="text-sm text-blue-900/60 pt-8 border-t border-blue-200">
