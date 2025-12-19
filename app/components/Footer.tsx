@@ -51,13 +51,13 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col gap-5 text-blue-100/90">
             <a className="flex items-center gap-3  transition group">
-              GREENCLIM SRL S.A.
+              GREENCLIM S.R.L.
             </a>
             <a className="flex items-center gap-3  transition group">
-              CUI: RO12345678
+              CUI: 51741980
             </a>
             <a className="flex items-center gap-3  transition group">
-              Nr. Reg. Com.: J40/1234/2020
+              Nr. Reg. Com.: J2025032159003
             </a>
             <a
               href="/gdpr"
@@ -83,7 +83,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:contact@climinstall.ro"
+              href="mailto:greenclim15@yahoo.com"
               className="flex items-center gap-3 hover:text-white transition group"
             >
               <div className="p-2 bg-blue-800/50 rounded-lg group-hover:bg-blue-700 transition">

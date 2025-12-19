@@ -118,7 +118,7 @@ const ServicesPage = () => {
         <FadeIn delay={850}>
           <div className="flex justify-center">
             <a
-              href="/oferta"
+              href="/form"
               className="px-10 py-4 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 text-white text-lg font-bold rounded-full shadow-xl hover:scale-105 transition-all"
             >
               Cere Oferta Acum
