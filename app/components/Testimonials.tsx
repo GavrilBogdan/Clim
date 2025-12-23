@@ -16,13 +16,13 @@ const Testimonials = () => {
       />
 
       <div className="mb-16 text-center space-y-4">
-        <span className="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-sm">
+        <span className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-sm">
           Recenzii
         </span>
-        <h2 className="font-inter font-black text-3xl sm:text-5xl text-blue-900">
+        <h2 className="font-inter font-black text-3xl sm:text-5xl text-green-900">
           Părerea clienților noștri
         </h2>
-        <p className="text-blue-900/60 max-w-xl mx-auto">
+        <p className="text-green-900/60 max-w-xl mx-auto">
           Clienții noștri ne recomandă pentru profesionalism, rapiditate și
           montaj curat.
         </p>
@@ -47,8 +47,8 @@ const Testimonials = () => {
           location="Giroc"
         />
       </div>
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -left-10 bottom-40 -z-30"></span>
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -right-10 top-10"></span>
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-green-500/60 blur-2xl rounded-full absolute -left-10 bottom-40 -z-30"></span>
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-green-500/60 blur-2xl rounded-full absolute -right-10 top-10"></span>
       <Cta />
     </section>
   );
@@ -69,19 +69,19 @@ const TestimonialCard = ({
     <div className="h-full flex flex-col rounded-3xl bg-white/40 backdrop-blur-3xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-300 p-8 cursor-pointer">
       <div className="mb-6 text-yellow-400 text-lg">★★★★★</div>
 
-      <p className="text-blue-900/80 leading-relaxed font-medium flex-grow">
+      <p className="text-green-900/80 leading-relaxed font-medium flex-grow">
         “{text}”
       </p>
 
-      <div className="my-6 h-px w-full bg-blue-200" />
+      <div className="my-6 h-px w-full bg-green-700/20" />
 
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold">
+        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center text-white font-bold">
           {name.charAt(0)}
         </div>
         <div>
-          <p className="font-bold text-blue-900">{name}</p>
-          <p className="text-sm text-blue-900/60">{location}</p>
+          <p className="font-bold text-green-900">{name}</p>
+          <p className="text-sm text-green900/60">{location}</p>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const Navbar = () => {
       >
         <nav className="w-full px-10 py-4 flex justify-between items-center">
           {/* LOGO */}
-          <Link href="/" className="font-bold text-2xl text-blue-700">
+          <Link href="/" className="font-bold text-2xl text-green-700">
             GreenClim
           </Link>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
               href="/form"
               className="
                 px-5 py-2 rounded-full bg-gradient-to-r
-                from-blue-700 via-blue-500 to-blue-400
+                from-green-700 via-green-500 to-green-400
                 text-white font-semibold shadow-md
                 hover:scale-105 transition-all duration-200
               "
@@ -65,11 +65,11 @@ const Navbar = () => {
           flex justify-between items-center
         "
       >
-        <Link href="/" className="font-bold text-xl text-blue-700">
+        <Link href="/" className="font-bold text-xl text-green-700">
           GreenClim
         </Link>
 
-        <button onClick={() => setOpen(true)} className="text-blue-700">
+        <button onClick={() => setOpen(true)} className="text-green-700">
           <Menu size={30} />
         </button>
       </header>
@@ -95,7 +95,7 @@ const Navbar = () => {
         `}
       >
         <button
-          className="self-end text-blue-700 mb-2"
+          className="self-end text-green-800 mb-2"
           onClick={() => setOpen(false)}
         >
           <X size={32} />
@@ -110,7 +110,7 @@ const Navbar = () => {
           href="/form"
           className="
             mt-4 px-3 py-3 rounded-full bg-gradient-to-r
-            from-blue-700 via-blue-500 to-blue-400
+            from-green-700 via-green-500 to-green-400
             text-white text-center font-semibold shadow-lg
             hover:scale-105 transition-all
           "
@@ -131,11 +131,11 @@ const NavItem = ({
   href: string;
   children: React.ReactNode;
 }) => (
-  <Link href={href} className="text-blue-700 font-medium relative group">
+  <Link href={href} className="text-green-800 font-medium relative group">
     {children}
     <span
       className="
-        absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-600
+        absolute -bottom-1 left-0 w-0 h-[2px] bg-green-600
         group-hover:w-full transition-all duration-300
       "
     />
@@ -152,7 +152,7 @@ const MobileNavItem = ({
   <Link
     href={href}
     className="
-      text-blue-900/90 text-lg font-semibold 
+      text-green-900/90 text-lg font-semibold 
       py-2 rounded-lg hover:bg-white/20 transition
     "
   >

@@ -18,7 +18,7 @@ const Particles = () => {
       {particles.map((_, i) => (
         <div
           key={i}
-          className="absolute bg-blue-400 rounded-full opacity-50 animate-float"
+          className="absolute bg-green-400 rounded-full opacity-50 animate-float"
           style={{
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,

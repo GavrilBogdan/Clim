@@ -113,10 +113,10 @@ const BookingModal = ({
       />
 
       <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl max-h-[90svh] flex flex-col">
-        <div className="bg-blue-600 rounded-t-2xl p-6 text-white flex justify-between">
+        <div className="bg-green-600 rounded-t-2xl p-6 text-white flex justify-between">
           <div>
             <h3 className="font-bold text-xl">Solicită Montaj</h3>
-            <p className="text-blue-100 text-sm">
+            <p className="text-green-100 text-sm">
               Estimare rapidă & programare
             </p>
           </div>
@@ -150,8 +150,8 @@ const BookingModal = ({
                     onClick={() => setBtu(val as any)}
                     className={`py-3 rounded-xl font-bold text-sm ${
                       btu === val
-                        ? "bg-blue-600 text-white"
-                        : "bg-blue-50 text-blue-700"
+                        ? "bg-green-600 text-white"
+                        : "bg-green-50 text-green-700"
                     }`}
                   >
                     {val} BTU
@@ -164,7 +164,7 @@ const BookingModal = ({
                   type="button"
                   onClick={() => setWithKit(true)}
                   className={`flex-1 py-3 rounded-xl font-bold ${
-                    withKit ? "bg-blue-600 text-white" : "bg-slate-100"
+                    withKit ? "bg-green-600 text-white" : "bg-slate-100"
                   }`}
                 >
                   Cu kit
@@ -173,7 +173,7 @@ const BookingModal = ({
                   type="button"
                   onClick={() => setWithKit(false)}
                   className={`flex-1 py-3 rounded-xl font-bold ${
-                    !withKit ? "bg-blue-600 text-white" : "bg-slate-100"
+                    !withKit ? "bg-green-600 text-white" : "bg-slate-100"
                   }`}
                 >
                   Fără kit
@@ -207,7 +207,7 @@ const BookingModal = ({
                 </label>
               </div>
 
-              <div className="p-4 bg-blue-50 rounded-xl font-bold text-center text-blue-700">
+              <div className="p-4 bg-green-50 rounded-xl font-bold text-center text-green-700">
                 Total estimativ: {total} lei
               </div>
               <div className="flex flex-row flex-wrap gap-2">
@@ -215,24 +215,24 @@ const BookingModal = ({
                   required
                   name="user_name"
                   placeholder="Nume complet"
-                  className="input border border-blue-300 rounded-lg p-2"
+                  className="input border border-green-300 rounded-lg p-2"
                 />
                 <input
                   required
                   name="user_phone"
                   placeholder="Telefon"
-                  className="input border border-blue-300 rounded-lg p-2"
+                  className="input border border-green-300 rounded-lg p-2"
                 />
                 <input
                   required
                   name="user_address"
                   placeholder="Localitate"
-                  className="input border border-blue-300 rounded-lg p-2"
+                  className="input border border-green-300 rounded-lg p-2"
                 />
               </div>
               <button
                 disabled={loading}
-                className="w-full py-4 bg-blue-600 text-white rounded-xl font-bold flex justify-center gap-2"
+                className="w-full py-4 bg-green-600 text-white rounded-xl font-bold flex justify-center gap-2"
               >
                 {loading && <Loader2 className="animate-spin" />}
                 Trimite cererea

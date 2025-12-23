@@ -39,11 +39,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body
-        className={` antialiased w-full min-h-screen bg-gradient-to-tr from-[#F8FBFF] via-[#D9F4FF] to-[#1A73E8]`}
+        className={` antialiased w-full min-h-screen bg-gradient-to-tr from-[#F8FBFF] via-[#D9F4FF] to-[#079407]`}
       >
         {children}
         <a
-          href="https://wa.me/40700000000"
+          href="https://wa.me/40735699820?text=Salut!%20Am%20nevoie%20de%20consultanta"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed right-1 sm:right-5 bottom-2 sm:bottom-5 z-50"

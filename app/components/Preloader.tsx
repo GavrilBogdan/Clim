@@ -17,34 +17,26 @@ export default function Preloader() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-gradient-to-tr from-[#F8FBFF] via-[#D9F4FF] to-[#1A73E8]">
-      {/* SOFT GLOW */}
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-gradient-to-tr from-[#F8FBFF] via-[#D9F4FF] to-[#12960b]">
       <div className="absolute w-[30rem] h-[30rem] rounded-full bg-white/20 blur-[120px]" />
 
-      {/* CONTENT */}
       <div className="relative z-10 flex flex-col items-center gap-6 animate-enter">
-        {/* ICON SCENE */}
         <div className="relative w-28 h-28 flex items-center justify-center">
-          {/* OUTER RING */}
-          <span className="absolute inset-0 rounded-full border-2 border-white/30 animate-ring" />
+          <span className="absolute inset-0 rounded-full border-2 border-green-400/30 animate-ring" />
 
-          {/* USER */}
-          <User size={64} className="text-white drop-shadow-xl" />
+          <User size={64} className="text-green-400 drop-shadow-xl" />
 
-          {/* WRENCH */}
           <Wrench
             size={30}
-            className="absolute bottom-2 right-3 text-white animate-wrench"
+            className="absolute bottom-2 right-3 text-green-700 animate-wrench"
           />
         </div>
 
-        {/* TEXT */}
-        <p className="text-white/90 font-inter text-sm tracking-wide uppercase">
-          Montăm confortul tău
+        <p className="text-green-400/90 font-inter text-sm tracking-wide uppercase">
+          GREENCLIM
         </p>
       </div>
 
-      {/* STYLES */}
       <style jsx>{`
         /* ENTER ANIMATION */
         .animate-enter {

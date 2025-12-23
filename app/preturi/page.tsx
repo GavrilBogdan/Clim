@@ -37,7 +37,7 @@ const PricingPage = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden px-6 py-24 select-none bg-blue-50/30">
+    <section className="relative w-full min-h-screen overflow-hidden px-6 py-24 select-none bg-green-50/30">
       <Navbar />
 
       <BookingModal
@@ -59,7 +59,7 @@ const PricingPage = () => {
             "radial-gradient(circle at center, black, transparent 85%)",
         }}
       />
-      <span className="absolute w-[40rem] h-[40rem] bg-blue-400/20 blur-[120px] rounded-full top-0 left-1/2 -translate-x-1/2 -z-10" />
+      <span className="absolute w-[40rem] h-[40rem] bg-green-400/20 blur-[120px] rounded-full top-0 left-1/2 -translate-x-1/2 -z-10" />
 
       <div className="w-full flex flex-col items-center justify-center max-w-6xl mx-auto mt-10">
         <FadeIn>
@@ -137,7 +137,7 @@ const PricingPage = () => {
 
         <FadeIn delay={500}>
           <div className="mt-16 text-center space-y-8">
-            <p className="text-blue-900/60 font-mont text-sm max-w-xl mx-auto border-t border-blue-200 pt-8">
+            <p className="text-green-900/60 font-mont text-sm max-w-xl mx-auto border-t border-green-300 pt-8">
               * Prețurile afișate sunt pentru manoperă și materialele standard.
               Pentru instalații complexe sau unități industriale, vă rugăm să
               cereți o ofertă dedicată. <br></br>* Prin trimiterea cererii ești
@@ -146,7 +146,7 @@ const PricingPage = () => {
 
             <button
               onClick={() => handleOpenModal("Ofertă Personalizată", "")}
-              className="inline-block px-12 py-4 bg-slate-900 hover:bg-blue-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+              className="inline-block px-12 py-4 bg-slate-900 hover:bg-green-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >
               Cere Ofertă Personalizată
             </button>
@@ -182,8 +182,8 @@ const PriceCard = ({
         relative flex flex-col p-8 rounded-3xl transition-all duration-300
         ${
           recommended
-            ? "bg-blue-600 text-white shadow-2xl shadow-blue-500/40 scale-100 lg:scale-110 z-10 ring-4 ring-blue-200/30"
-            : "bg-white/60 backdrop-blur-xl border border-white/60 hover:border-blue-300 shadow-lg text-slate-800 hover:bg-white"
+            ? "bg-green-600 text-white shadow-2xl shadow-green-500/40 scale-100 lg:scale-110 z-10 ring-4 ring-green-200/30"
+            : "bg-white/60 backdrop-blur-xl border border-white/60 hover:border-green-300 shadow-lg text-slate-800 hover:bg-white"
         }
       `}
     >
@@ -246,7 +246,7 @@ const PriceCard = ({
             <Check
               size={18}
               className={`shrink-0 mt-0.5 ${
-                recommended ? "text-blue-200" : "text-blue-500"
+                recommended ? "text-green-200" : "text-green-500"
               }`}
             />
             <span className={recommended ? "text-blue-50" : "text-slate-600"}>
@@ -262,8 +262,8 @@ const PriceCard = ({
           w-full py-3 rounded-xl font-bold text-center transition-all cursor-pointer
           ${
             recommended
-              ? "bg-white text-blue-700 hover:bg-blue-50 shadow-md"
-              : "bg-blue-50 text-blue-700 hover:bg-blue-100 hover:text-blue-800"
+              ? "bg-white text-green-700 hover:bg-green-50 shadow-md"
+              : "bg-blue-50 text-green-700 hover:bg-green-100 hover:text-green-800"
           }
         `}
       >

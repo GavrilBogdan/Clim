@@ -12,7 +12,6 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 
 const Page = () => {
-  // 1. Folosim un singur state pentru tot formularul (mai curat)
   const [formData, setFormData] = useState({
     nume: "",
     prenume: "",
@@ -26,10 +25,9 @@ const Page = () => {
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
-  // Funcție generică pentru a actualiza orice câmp
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // Resetăm eroarea când utilizatorul începe să scrie din nou
+
     if (status === "error") {
       setStatus("idle");
       setErrorMessage("");
@@ -39,14 +37,12 @@ const Page = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // 2. Validare Simplă
     if (!formData.nume || !formData.telefon || !formData.localitate) {
       setStatus("error");
       setErrorMessage("Te rugăm să completezi câmpurile obligatorii.");
       return;
     }
 
-    // 3. Validare Telefon (minim 10 cifre)
     if (formData.telefon.length < 10) {
       setStatus("error");
       setErrorMessage("Introdu un număr de telefon valid.");
@@ -56,23 +52,21 @@ const Page = () => {
     setStatus("loading");
 
     try {
-      // Asigură-te că ruta API este corectă (ex: /api/booking sau /api/contact)
-      // Adaptăm payload-ul pentru a se potrivi cu ce așteaptă API-ul tău Resend
-      const res = await fetch("/api/booking", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           userName: `${formData.nume} ${formData.prenume}`,
           userPhone: formData.telefon,
           userAddress: formData.localitate,
-          packageName: "Oferta Buget Custom", // Trimitem un nume generic de pachet
+          packageName: "Oferta Buget Custom",
           packagePrice: `${formData.buget} RON`,
         }),
       });
 
       if (res.ok) {
         setStatus("success");
-        // 4. Resetăm formularul după succes
+
         setFormData({
           nume: "",
           prenume: "",
@@ -93,7 +87,6 @@ const Page = () => {
     <section className="relative w-full min-h-screen overflow-hidden flex items-center justify-center px-6 py-24 select-none">
       <Navbar />
 
-      {/* Background Elements */}
       <div
         className="absolute inset-0 -z-10 pointer-events-none"
         style={{
@@ -104,22 +97,21 @@ const Page = () => {
           backgroundSize: "150px 150px",
         }}
       />
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-3xl rounded-full absolute -left-10 bottom-10 -z-10"></span>
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-purple-500/40 blur-3xl rounded-full absolute -right-10 top-10 -z-10"></span>
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-green-500/60 blur-3xl rounded-full absolute -left-10 bottom-10 -z-10"></span>
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-lime-500/40 blur-3xl rounded-full absolute -right-10 top-10 -z-10"></span>
 
-      {/* Main Card */}
-      <div className="border border-blue-200/40 rounded-3xl p-6 sm:p-10 w-full max-w-md bg-white/60 backdrop-blur-2xl shadow-xl flex flex-col gap-6">
+      <div className="border border-green-200/40 rounded-3xl p-6 sm:p-10 w-full max-w-md bg-white/60 backdrop-blur-2xl shadow-xl flex flex-col gap-6">
         <div className="text-center">
-          <h1 className="font-bold font-inter text-3xl text-blue-900 drop-shadow-sm">
+          <h1 className="font-bold font-inter text-3xl text-green-900 drop-shadow-sm">
             Cere Ofertă
           </h1>
-          <p className="text-blue-900/60 mt-2 text-sm font-medium">
+          <p className="text-green-900/60 mt-2 text-sm font-medium">
             Spune-ne ce cauți și te contactăm noi.
           </p>
         </div>
 
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-          <div className="flex gap-4">
+          <div className="flex gap-4 sm:flex-row flex-col">
             <InputField
               name="nume"
               value={formData.nume}
@@ -162,7 +154,6 @@ const Page = () => {
             type="tel"
           />
 
-          {/* Mesaj de Eroare Inline */}
           {status === "error" && (
             <div className="flex items-center gap-2 text-red-500 text-sm font-bold bg-red-50 p-3 rounded-lg border border-red-100 animate-fadeIn">
               <AlertCircle size={16} />
@@ -177,7 +168,7 @@ const Page = () => {
               ${
                 status === "success"
                   ? "bg-green-600 scale-[1.02] shadow-green-500/30"
-                  : "bg-blue-600 hover:bg-blue-700 shadow-blue-500/30"
+                  : "bg-green-600 hover:bg-green-700 shadow-green-500/30"
               }
               ${
                 status === "loading"
@@ -209,7 +200,6 @@ const Page = () => {
 
 export default Page;
 
-// Componenta InputField optimizată
 const InputField = ({
   placeholder,
   icon,
@@ -227,7 +217,7 @@ const InputField = ({
 }) => {
   return (
     <div className="relative w-full group">
-      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-400 group-focus-within:text-blue-600 transition-colors">
+      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-green-400 group-focus-within:text-green-600 transition-colors">
         {icon}
       </div>
       <input
@@ -236,7 +226,7 @@ const InputField = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="w-full pl-11 pr-4 py-3 bg-white/50 border border-blue-200 rounded-xl outline-none text-blue-900 placeholder-blue-300 font-medium focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all"
+        className="w-full pl-11 pr-4 py-3 bg-white/50 border border-green-200 rounded-xl outline-none text-green-900 placeholder-green-600 font-medium focus:bg-white focus:border-green-500 focus:ring-2 focus:ring-green-100 transition-all"
       />
     </div>
   );

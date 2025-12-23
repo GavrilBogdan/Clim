@@ -21,11 +21,11 @@ const page = () => {
         <div className="flex flex-col  sm:flex-col md:flex-col lg:flex-row w-full justify-center">
           <div className=" bg-white/20 backdrop-blur-3xl rounded-t-3xl lg:rounded-t-none lg:rounded-l-3xl p-6 sm:p-10 flex flex-col gap-10 flex-2/3">
             <div>
-              <h1 className="font-inter font-black text-2xl sm:text-4xl tracking-tight text-blue-700">
+              <h1 className="font-inter font-black text-2xl sm:text-4xl tracking-tight text-green-700">
                 Contacteaza-ne
               </h1>
-              <div className="border-6 w-[60%] rounded-full border-blue-300 mt-2"></div>
-              <div className="mt-6 font-semibold font-mont text-blue-950 tracking-tight">
+              <div className="border-6 w-[60%] rounded-full border-green-300 mt-2"></div>
+              <div className="mt-6 font-semibold font-mont text-green-950 tracking-tight">
                 <p>
                   Trimite-ne un email sau suna pentru a discuta despre nevoile
                   dumneavoastra!
@@ -44,7 +44,7 @@ const page = () => {
                   </a>
                   <Link
                     href="/form"
-                    className="underline font-semibold cursor-pointer font-inter hover:text-blue-500"
+                    className="underline font-semibold cursor-pointer font-inter hover:text-green-500"
                   >
                     Cere Ofertă
                   </Link>
@@ -52,7 +52,7 @@ const page = () => {
               </div>
             </div>
             <div className="flex-col sm:flex-row flex gap-5">
-              <div className="flex gap-3 flex-col p-4 bg-white/40 rounded-3xl flex-1 hover:shadow-[0_8px_25px_rgba(30,144,255,0.2)] cursor-pointer hover:scale-[1.015] transition-all duration-300">
+              <div className="flex gap-3 flex-col p-4 bg-white/40 rounded-3xl flex-1 hover:shadow-[0_8px_25px_rgba(30,255,30,0.2)] cursor-pointer hover:scale-[1.015] transition-all duration-300">
                 <h1 className="font-semibold text-lg flex flex-row gap-2 items-center">
                   <Headphones />
                   Asistenta
@@ -62,7 +62,7 @@ const page = () => {
                   nelamuriri puteti avea legate de serviciile noastre.
                 </p>
               </div>
-              <div className="flex gap-3 flex-col p-4 bg-white/40 rounded-3xl flex-1 hover:shadow-[0_8px_25px_rgba(30,144,255,0.2)] cursor-pointer hover:scale-[1.015] transition-all duration-300">
+              <div className="flex gap-3 flex-col p-4 bg-white/40 rounded-3xl flex-1 hover:shadow-[0_8px_25px_rgba(30,255,30,0.2)] cursor-pointer hover:scale-[1.015] transition-all duration-300">
                 <h1 className="font-semibold text-lg flex flex-row gap-2 items-center">
                   <Lightbulb />
                   Consultanta
@@ -73,7 +73,7 @@ const page = () => {
                   dumneavoastra.
                 </p>
               </div>
-              <div className="flex gap-3 flex-col p-4 bg-white/40 rounded-3xl flex-1 hover:shadow-[0_8px_25px_rgba(30,144,255,0.2)] cursor-pointer hover:scale-[1.015] transition-all duration-300">
+              <div className="flex gap-3 flex-col p-4 bg-white/40 rounded-3xl flex-1 hover:shadow-[0_8px_25px_rgba(30,255,30,0.2)] cursor-pointer hover:scale-[1.015] transition-all duration-300">
                 <h1 className="font-semibold text-lg flex flex-row gap-2 items-center">
                   <Calendar />
                   Programare
@@ -106,8 +106,8 @@ const page = () => {
           </div>
         </div>
       </div>
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-300/60 blur-2xl rounded-full absolute -left-10 bottom-10 -z-50"></span>
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-400/60 blur-2xl rounded-full absolute -right-10 top-10 -z-50"></span>
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-green-300/60 blur-2xl rounded-full absolute -left-10 bottom-10 -z-50"></span>
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-green-400/60 blur-2xl rounded-full absolute -right-10 top-10 -z-50"></span>
     </section>
   );
 };

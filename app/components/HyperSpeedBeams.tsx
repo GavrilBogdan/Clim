@@ -20,7 +20,7 @@ const HyperSpeedBeams = () => {
     const beamCount = 300;
     const baseSpeed = 15;
     const fov = 600;
-    const colors = ["#2563eb", "#1d4ed8", "#0ea5e9", "#3b82f6"];
+    const colors = ["#15803d", "#166534", "#22c55e", "#4ade80"];
 
     // --- The Beam Class ---
     class Beam {
@@ -71,10 +71,7 @@ const HyperSpeedBeams = () => {
         ctx.lineTo(x2dTail, y2dTail);
 
         const alpha = Math.min(1, scale / 10);
-        // Note: We use the beam color but ensure we are handling the alpha correctly
-        // However, since we are using hex codes in 'colors', we need a quick way to add alpha
-        // or just rely on the hex if we don't need complex fading.
-        // For the "fade in" effect, simple opacity override works best:
+
         ctx.strokeStyle = this.color;
         ctx.globalAlpha = alpha; // Use globalAlpha for easier fading
 

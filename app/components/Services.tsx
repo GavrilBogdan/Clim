@@ -48,7 +48,7 @@ const Services = () => {
       <div className="flex flex-col items-center gap-12 max-w-6xl mx-auto">
         <motion.h2
           style={{ y: titleY }}
-          className="text-4xl sm:text-5xl font-bold text-blue-700 drop-shadow-lg tracking-tight text-center"
+          className="text-4xl sm:text-5xl font-bold text-green-700 drop-shadow-lg tracking-tight text-center"
         >
           Serviciile Noastre
         </motion.h2>
@@ -56,19 +56,19 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full">
           {[
             {
-              icon: <Snowflake size={42} className="text-blue-600" />,
+              icon: <Snowflake size={42} className="text-green-600" />,
               title: "Montaj Aer Condiționat",
               description:
                 "Instalare profesionistă, rapidă și sigură pentru toate modelele de AC.",
             },
             {
-              icon: <Wrench size={42} className="text-blue-600" />,
+              icon: <Wrench size={42} className="text-green-600" />,
               title: "Service & Mentenanță",
               description:
                 "Curățare, verificări tehnice și întreținere pentru performanță maximă.",
             },
             {
-              icon: <ShieldCheck size={42} className="text-blue-600" />,
+              icon: <ShieldCheck size={42} className="text-green-600" />,
               title: "Garanție & Siguranță",
               description:
                 "Beneficiați de garanție extinsă și intervenții rapide în caz de urgență.",
@@ -92,8 +92,8 @@ const Services = () => {
         </div>
       </div>
 
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -left-10 bottom-10" />
-      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-blue-500/60 blur-2xl rounded-full absolute -right-10 top-10" />
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-green-500/60 blur-2xl rounded-full absolute -left-10 bottom-10" />
+      <span className="hidden sm:flex w-[15rem] h-[15rem] bg-green-500/60 blur-2xl rounded-full absolute -right-10 top-10" />
 
       <TrustBadges />
     </section>
@@ -115,7 +115,7 @@ const ServiceCard = ({
     <div
       className="
         group flex flex-col items-center text-center gap-4 p-6
-        border border-blue-300/40 bg-white/40 backdrop-blur-3xl
+        border border-green-300/40 bg-white/40 backdrop-blur-3xl
         rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.1)]
         transition-all duration-300 
         hover:shadow-[0_10px_40px_rgba(0,0,0,0.15)]
@@ -124,11 +124,11 @@ const ServiceCard = ({
     >
       <div className="p-4 bg-blue-200/40 rounded-full shadow-inner">{icon}</div>
 
-      <h3 className="text-2xl font-bold text-blue-700 tracking-tight">
+      <h3 className="text-2xl font-bold text-green-700 tracking-tight">
         {title}
       </h3>
 
-      <p className="text-blue-900/70 leading-relaxed text-sm font-medium">
+      <p className="text-green-900/70 leading-relaxed text-sm font-medium">
         {description}
       </p>
     </div>
