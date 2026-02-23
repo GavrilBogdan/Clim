@@ -33,14 +33,14 @@ const page = () => {
                 <div className="mt-4 font-light font-mont text-lg flex flex-col gap-2">
                   <p className="flex flex-row gap-3 items-center">
                     <Mail />
-                    greenclim15@yahoo.com
+                    example@yahoo.com
                   </p>
                   <a
                     className="flex flex-row gap-3 items-center"
-                    href="tel:0735699820"
+                    href="tel:"
                   >
                     <Phone className="text-md " />
-                    0735 699 820
+                    0700 000 000
                   </a>
                   <Link
                     href="/form"
