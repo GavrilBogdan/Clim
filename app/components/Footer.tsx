@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="flex items-center gap-4 mt-2">
             <SocialIcon
               icon={<Facebook size={20} />}
-              href="https://www.facebook.com/alina.popescu.180410"
+              href="https://www.facebook.com"
               color="hover:text-blue-300"
             />
           </div>
@@ -49,10 +49,10 @@ export default function Footer() {
               GREENCLIM S.R.L.
             </a>
             <a className="flex items-center gap-3  transition group">
-              CUI: 51741980
+              CUI: 
             </a>
             <a className="flex items-center gap-3  transition group">
-              Nr. Reg. Com.: J2025032159003
+              Nr. Reg. Com.: 
             </a>
             <a
               href="/gdpr"
@@ -68,23 +68,23 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col gap-5 text-green-100/90">
             <a
-              href="tel:0735699820"
+              href="tel:"
               className="flex items-center gap-3 hover:text-white transition group"
             >
               <div className="p-2 bg-green-800/50 rounded-lg group-hover:bg-green-700 transition">
                 <Phone size={20} className="text-lime-300" />
               </div>
-              <span className="font-semibold text-lg">0735 699 820</span>
+              <span className="font-semibold text-lg">0700 000 000</span>
             </a>
 
             <a
-              href="mailto:greenclim15@yahoo.com"
+              href="mailto:"
               className="flex items-center gap-3 hover:text-white transition group"
             >
               <div className="p-2 bg-green-800/50 rounded-lg group-hover:bg-green-700 transition">
                 <Mail size={20} className="text-lime-300" />
               </div>
-              <span>greenclim15@yahoo.com</span>
+              <span>example@yahoo.com</span>
             </a>
 
             <div className="flex items-center gap-3">
